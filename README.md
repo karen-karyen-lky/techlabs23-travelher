@@ -1,18 +1,3 @@
-<<<<<<< Updated upstream
-# techlabs23-travelher
-Hello there, 
-
-everyone please create your own branch and work on it. You can do whatever you want in your own branch.
-
-Please test your work in details before you do any pull request.
-
-If you have any questions, please ask in the group.
-
-All the best :)
-
-
-Julia ist hier
-=======
 # [Material Tailwind Kit React](http://demos.creative-tim.com/material-tailwind-kit-react/#/?ref=readme-mtkr) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://www.creative-tim.com/product/material-tailwind-kit-react&text=Check%20Material%20Tailwind%20Kit%20React%20made%20by%20@CreativeTim%20#webdesign%20#kit%20#materialdesign%20#react%20#materialtailwind%20#tailwindcss%20https://www.creative-tim.com/product/material-tailwind-kit-react)
 
 ![version](https://img.shields.io/badge/version-2.0.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-tailwind-kit-react.svg)](https://github.com/creativetimofficial/material-tailwind-kit-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-tailwind-kit-react.svg)](https://github.com/creativetimofficial/material-tailwind-kit-react/issues?q=is%3Aissue+is%3Aclosed)
@@ -187,4 +172,3 @@ Dribbble: <https://dribbble.com/creativetim>
 Google+: <https://plus.google.com/+CreativetimPage>
 
 Instagram: <https://instagram.com/creativetimofficial>
->>>>>>> Stashed changes

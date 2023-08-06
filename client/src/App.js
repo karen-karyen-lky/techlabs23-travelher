@@ -13,6 +13,7 @@ import Home from "./pages/Home";
 import Single from "./pages/Single";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Blog from "./pages/Blog"
 import Duesseldorf from "./pages/duesseldorf";
 import "./style.scss"
 
@@ -48,7 +49,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/duesseldorf",
-        element: <Duesseldorf/>,
+        element: <Duesseldorf />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
       } 
     ],
   },

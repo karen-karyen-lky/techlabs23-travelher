@@ -7,8 +7,6 @@ import Ddorf from '../img/Ddorf.jpg.webp';
 
 const Duesseldorf = () => {
 
-
-
   return (
     <div className='single'>
       <div className="content">

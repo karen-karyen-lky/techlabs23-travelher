@@ -1,3 +1,5 @@
+import * as React from "react";
+import * as ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -11,7 +13,10 @@ import Home from "./pages/Home";
 import Single from "./pages/Single";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Blog from "./pages/Blog"
+import Duesseldorf from "./pages/duesseldorf";
 import "./style.scss"
+
 
 const Layout = () => {
   return (
@@ -42,6 +47,14 @@ const router = createBrowserRouter([
         path: "/write",
         element: <Write />,
       },
+      {
+        path: "/duesseldorf",
+        element: <Duesseldorf />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
+      } 
     ],
   },
   {

@@ -5,7 +5,23 @@ import postRoutes from "./routes/posts.js";
 import cookieParser from "cookie-parser";
 import multer from "multer";
 
+
 const app = express();
+const dotenv = require("dotenv");
+const mongoose = require("mongoose");
+//const authRoutes = require("./routes/auth.js");
+
+dotenv.config();
+
+mongoose
+  .connect(process.env.MONGO_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+  })
+  .then(console.log("Conneted to MongoDB"))
+  .catch((err)=> console.log(err));
+
 
 app.use(express.json());
 app.use(cookieParser());
@@ -30,5 +46,5 @@ app.use("/api/users", userRoutes);
 app.use("/api/posts", postRoutes);
 
 app.listen(8800, () => {
-  console.log("Connected!");
+  console.log("Backend is running!");
 });

@@ -49,7 +49,7 @@ const Blog = () => {
 
 
   return (
-    <div className="home">
+    <div className="blog">
       <div className="posts">
         {posts.map((post) => (
           <div className="post" key={post.id}>

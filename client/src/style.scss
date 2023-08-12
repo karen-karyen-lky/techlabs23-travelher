@@ -6,6 +6,76 @@ $darkPurple: #8080FF;
 .app {
   display: flex;
   justify-content: center;
+
+  //HERO
+  
+  .home-container {
+    height: 400px;
+    .home-text-section{
+      width: 65%;
+      float: left;
+      margin-top: 100px;
+      .primary-heading{
+        color: $lightPurple;
+        font-size: 42px;
+      }
+      .primary-text{
+        margin-top: 5px;
+      }
+    }
+    .home-banner-container{
+      margin-left: 65%;
+      height:10px;
+    }
+  }
+
+  //Facts
+
+  .facts{
+    .dot-container {
+      display: flex; /* Use flex to horizontally align the circles */
+      justify-content: center; /* Center align the circles horizontally */
+      align-items: center; /* Center align the circles vertically */
+      color: white;
+      margin-top: 80px;
+    }
+
+    .description{
+      color: $darkPurple;
+      /* Style the parent container as a horizontal list */
+      .horizontal-list {
+        list-style: none;
+        justify-content: center; 
+        align-items: center;
+        display: flex; /* Use flexbox for horizontal layout */
+        padding: 0; /* Remove default padding */
+        text-align: center;
+      }
+
+      /* Style the individual list items */
+      .horizontal-list li {
+        width: 200px;
+        margin-right: 20px; /* Add space between items */
+        padding: 5px 10px;
+        border: 1px solid $sand;
+        border-radius: 5px;
+      }
+    }
+
+    .dot {
+      height: 100px;
+      width: 100px;
+      background-color: $lightPurple; /* Use your color code here */
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0 55px; /* Adjust margin as needed */
+      text-align: center; /* Center align text inside circle */
+      line-height: 100px; /* Vertically center the text inside circle */
+      font-size: 18px; /* Adjust font size as needed */
+    }
+  
+  }
+
   .container {
     width: 1024px;
 
@@ -116,8 +186,7 @@ $darkPurple: #8080FF;
 
     footer {
       margin-top: 100px;
-      padding: 20px;
-      // background-color: $lightPurple;
+      // padding: 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -127,9 +196,12 @@ $darkPurple: #8080FF;
       }
     }
 
-    //HOME
+  
+    
+    
+    //BLOG
 
-    .home {
+    .blog {
       .posts {
         margin-top: 50px;
         display: flex;

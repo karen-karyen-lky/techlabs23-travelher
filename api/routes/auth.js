@@ -1,8 +1,10 @@
 import express from "express";
 import { register, login, logout } from "../controllers/auth.js";
+import { UserSchema, LocationSchema } from "../models/User.js";
 
-const router = require("express").Router();
-const User = require("../models/User.js");
+
+
+const router = express.Router();
 
 //REGISTER
 
@@ -26,6 +28,5 @@ router.post("/register", async (req, res) => {
 router.post("/login", login);
 router.post("/logout", logout);
 
-module.exports = router;
+//module.exports = router;
 export default router;
-

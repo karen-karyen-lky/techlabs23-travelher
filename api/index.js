@@ -4,21 +4,18 @@ import userRoutes from "./routes/users.js";
 import postRoutes from "./routes/posts.js";
 import cookieParser from "cookie-parser";
 import multer from "multer";
-
+import dotenv from "dotenv";
+import mongoose from "mongoose";
 
 const app = express();
-const dotenv = require("dotenv");
-const mongoose = require("mongoose");
+//const dotenv = require("dotenv"); ####ersetzt durch import function#####
+//const mongoose = require("mongoose"); ####ersetzt durch import function##### 
 //const authRoutes = require("./routes/auth.js");
 
 dotenv.config();
 
 mongoose
-  .connect(process.env.MONGO_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-  })
+  .connect(process.env.MONGO_URL)
   .then(console.log("Conneted to MongoDB"))
   .catch((err)=> console.log(err));
 

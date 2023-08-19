@@ -24,9 +24,10 @@ $darkPurple: #8080FF;
       background-color: $lightPurple;
 
       h1 {
-        font-size: 20px;
-        color: teal;
+        font-size: 30px;
+        color: white;
         margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
       }
 
       form {
@@ -46,7 +47,7 @@ $darkPurple: #8080FF;
         button {
           padding: 10px;
           border: none;
-          background-color: teal;
+          background-color: #8080FF;
           cursor: pointer;
           color: white;
         }
@@ -103,9 +104,9 @@ $darkPurple: #8080FF;
             border: 1px solid white;
 
             &:hover {
-              color: teal;
+              color: #8080FF;
               background-color: white;
-              border: 1px solid teal;
+              border: 1px solid #8080FF;
             }
           }
         }
@@ -288,9 +289,9 @@ $darkPurple: #8080FF;
             padding: 7.5px 15px;
             border: none;
             cursor: pointer;
-            color: teal;
+            color: #8080FF;
             background-color: white;
-            border: 1px solid teal;
+            border: 1px solid #8080FF;
 
             &:hover {
               border: 1px solid white;
@@ -363,16 +364,16 @@ $darkPurple: #8080FF;
 
             :first-child{
               cursor: pointer;
-              color: teal;
+              color: #8080FF;
               background-color: white;
-              border: 1px solid teal;
+              border: 1px solid #8080FF;
               padding: 3px 5px;
             }
             :last-child{
               cursor: pointer;
               color: white;
-              background-color: teal;
-              border: 1px solid teal;
+              background-color: #8080FF;
+              border: 1px solid #8080FF;
               padding: 3px 5px;
             }
           }
@@ -381,7 +382,7 @@ $darkPurple: #8080FF;
             display: flex;
             align-items: center;
             gap: 2px;
-            color: teal;
+            color: #8080FF;
           }
         }
       }

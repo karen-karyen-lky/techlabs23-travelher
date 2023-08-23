@@ -15,7 +15,7 @@ const deleteGoal = (req, res) => {
     res.status(200).json({message : `Delete goal ${req.params.id}` })
 }
 
-module.esports = {
+module.exports = {
     getGoals,
     setGoal,
     updateGoal,

@@ -19,7 +19,8 @@ const UserSchema = new mongoose.Schema({
     password:{
         type:String,
         reqired:true
-    },profilePic: {
+    },
+    profilePic: {
         type: String,
         default:"",
     },

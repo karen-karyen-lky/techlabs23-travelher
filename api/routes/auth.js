@@ -1,7 +1,7 @@
 import express from "express";
 import { register, login, logout } from "../controllers/auth.js";
 import { UserSchema, LocationSchema } from "../models/User.js";
-import bcrypt from "bcryptjs";
+import bcrypt from "bcrypt";
 
 const router = express.Router();
 
@@ -9,10 +9,12 @@ const router = express.Router();
 
 router.post("/register", async (req, res) => {
     try{
+        const salt = await bcrypt.genSalt(10);
+        const hashedPass = await bcrypt.hash(req.body.password, salt);
         const newUserSchema = new UserSchema({
             username: req.body.username,
             email: req.body.email.email,
-            password: req.body.password,
+            password: req.body.hashedPass,
         })
 
         const user = await newUserSchema.save();

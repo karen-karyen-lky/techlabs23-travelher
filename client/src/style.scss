@@ -72,7 +72,6 @@ $darkPurple: #8080FF;
       line-height: 100px; /* Vertically center the text inside circle */
       font-size: 18px; /* Adjust font size as needed */
     }
-  
   }
 
   .container {
@@ -132,9 +131,11 @@ $darkPurple: #8080FF;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 10px;
         .logo {
+          margin-top: 10px;
           img {
-            width: 120px;
+            width: 85%;
           }
         }
         .links {
@@ -243,6 +244,116 @@ $darkPurple: #8080FF;
         }
       }
     }
+
+    //TopRatedPlaces
+    .top-rated-places {
+
+      .header-container {
+        position: relative;
+        margin-top: 50px;
+        background-color: white;
+        border: 4px solid $lightPurple;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 100px;
+        width: 100%;
+    
+        .huge-header {
+          font-size: 35px;
+          margin: 0;
+          color: black;
+          //text-shadow: 2px 2px 4px rgb(255, 255, 255);
+        }
+
+        //Balken vor dem Textfeld
+        &::before {
+          content: "";
+          position: absolute; // Setze eine absolute Position für das Pseudo-Element
+          top: 0;
+          left: -9999px; // Verschiebe das Pseudo-Element nach links über den sichtbaren Bereich
+          width: 10000px; // Setze eine sehr große Breite, um sicherzustellen, dass es die gesamte Breite der Seite abdeckt
+          height: 100%; // Deckt die volle Höhe des Container-Elements ab
+          background-color: $lightPurple;
+        }
+
+        //Balken nach dem Textfeld
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: -500px; // Verschiebe das Pseudo-Element nach rechts über den sichtbaren Bereich
+          width: 500px;
+          height: 100%;
+          background-color: $lightPurple;
+        }
+      }
+
+      .places {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+
+        .place {
+          display: flex;
+          gap: 80px;
+    
+          .img {
+            flex: 2;
+            position: relative;
+          
+            img {
+              width: 400px;
+              height: 200px;
+              object-fit: cover;
+            }
+          
+            &::after {
+              content: "";
+              width: 400px;
+              height: 200px;
+              background-color: $sand;
+              position: absolute;
+              top: 20px;
+              left: -20px;
+              z-index: -1;
+            }
+          }
+          
+    
+          // Other styling for content...
+          .content {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: normal;
+            h1 {
+              font-size: 30px;
+            }
+            p {
+              font-size: 20px;
+            }
+            button {
+              width: max-content;
+              padding: 10px 20px;
+              margin-top: 50px;
+              border: none;
+              cursor: pointer;
+              background-color: white;
+              border: 1px solid $darkPurple;
+              color: $darkPurple;
+              &:hover {
+                border: 1px solid white;
+                background-color: $lightPurple;
+                color: black;
+              }
+            }
+          }
+        }
+      }
+    }
+    
+
     //SINGLE
     .single {
       display: flex;
@@ -402,3 +513,4 @@ $darkPurple: #8080FF;
     }
   }
 }
+  

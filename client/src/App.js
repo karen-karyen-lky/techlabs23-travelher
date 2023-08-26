@@ -3,7 +3,6 @@ import * as ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
   Outlet,
 } from "react-router-dom";
 import Register from "./pages/Register";
@@ -15,7 +14,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Blog from "./pages/Blog"
 import Duesseldorf from "./pages/duesseldorf";
-import Distributetsp from "./pages/distributetsp";
+import TopRatedPlaces from "./pages/TopRatedPlaces";
+import Germany from "./pages/Germany";
 import "./style.scss"
 
 
@@ -53,23 +53,36 @@ const router = createBrowserRouter([
         element: <Duesseldorf />,
       },
       {
-        path: "/distributetsp",
-        element: <Distributetsp />,
-      },
-      {
         path: "/blog",
         element: <Blog />,
-      } 
+      }, 
+      {
+        path: "/TopRatedPlaces",
+        element: <TopRatedPlaces />,
+      },
+
+      {
+        path: "/Germany",
+        element: <Germany />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
+      },
     ],
   },
-  {
+/*   {
     path: "/register",
     element: <Register />,
   },
   {
     path: "/login",
     element: <Login />,
-  },
+  }, */
 ]);
 
 // to route to other pages as in the folder
@@ -81,6 +94,7 @@ function App() {
       </div>
     </div>
   );
+
 }
 
 export default App;

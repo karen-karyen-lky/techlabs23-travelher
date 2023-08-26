@@ -1,7 +1,7 @@
 import express from "express";
-import { UserSchema } from "../models/User.js"; //nun ja ich habe es zu UserSchema geändert aber eigwntlich hieß es vorher User und in dem Code sollte es auch User als Konstante aufgerufen werden, wie kann ich das berprüfen dass ich hierüber an die Daten zugreife??
-import { PostSchema } from "../models/Post.js"; // eigentlich ursprünglich als Post Konstante eingebaut
-import bcrypt from "bcryptjs";
+import UserSchema from "../models/User.js"; //nun ja ich habe es zu UserSchema geändert aber eigwntlich hieß es vorher User und in dem Code sollte es auch User als Konstante aufgerufen werden, wie kann ich das berprüfen dass ich hierüber an die Daten zugreife??
+import PostSchema from "../models/Post.js"; // eigentlich ursprünglich als Post Konstante eingebaut
+import bcrypt from "bcrypt";
 
 const router = express.Router()
 

@@ -28,15 +28,15 @@ const UserSchema = new mongoose.Schema({
     { timestamps:true }
 );
 
-const LocationSchema = new mongoose.Schema({
-    location:{
-        type:String,
-        required: true,
-        unique: true
-    },
-    },
-    { timestamps:true }
-);
+// const LocationSchema = new mongoose.Schema({
+//     location:{
+//         type:String,
+//         required: true,
+//         unique: true
+//     },
+//     },
+//     { timestamps:true }
+// );
 
-
-export { UserSchema, LocationSchema }
+export default UserSchema
+//export { UserSchema, LocationSchema }

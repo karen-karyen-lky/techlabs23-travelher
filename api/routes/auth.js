@@ -1,6 +1,6 @@
 import express from "express";
 import { register, login, logout } from "../controllers/auth.js";
-import { UserSchema, LocationSchema } from "../models/User.js";
+import UserSchema from "../models/User.js";
 import bcrypt from "bcrypt";
 
 const router = express.Router();

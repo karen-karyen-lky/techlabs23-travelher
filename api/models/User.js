@@ -5,7 +5,7 @@
 
 import mongoose from "mongoose"
 
-const UserSchema = new mongoose.Schema({
+const User = new mongoose.Schema({
     username:{
         type:String,
         required: true,
@@ -38,5 +38,5 @@ const UserSchema = new mongoose.Schema({
 //     { timestamps:true }
 // );
 
-export default UserSchema
+export default User;
 //export { UserSchema, LocationSchema }

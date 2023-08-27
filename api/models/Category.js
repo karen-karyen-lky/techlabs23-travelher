@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const CategorySchema = new mongoose.Schema(
+const Category = new mongoose.Schema(
     {
         name:{
             type:String,
@@ -10,5 +10,5 @@ const CategorySchema = new mongoose.Schema(
     { timestamps:true }
 );
 
-export default Category
+export default Category;
 //module.exports = mongoose.model("Category", CategorySchema)

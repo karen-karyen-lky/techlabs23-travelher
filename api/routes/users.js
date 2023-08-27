@@ -1,6 +1,6 @@
 import express from "express";
-import UserSchema from "../models/User.js"; //nun ja ich habe es zu UserSchema geändert aber eigwntlich hieß es vorher User und in dem Code sollte es auch User als Konstante aufgerufen werden, wie kann ich das berprüfen dass ich hierüber an die Daten zugreife??
-import PostSchema from "../models/Post.js"; // eigentlich ursprünglich als Post Konstante eingebaut
+import User from "../models/User.js"; //nun ja ich habe es zu UserSchema geändert aber eigwntlich hieß es vorher User und in dem Code sollte es auch User als Konstante aufgerufen werden, wie kann ich das berprüfen dass ich hierüber an die Daten zugreife??
+import Post from "../models/Post.js"; // eigentlich ursprünglich als Post Konstante eingebaut
 import bcrypt from "bcrypt";
 
 const router = express.Router()
@@ -19,14 +19,14 @@ router.put("/:id", async (req, res) => {
       req.body.password = await bcrypt.hash(req.body.password, salt);
     }
     try {
-      const updatedUserSchema = await UserSchema.findByIdAndUpdate(
+      const updatedUser = await User.findByIdAndUpdate(
         req.params.id,
         {
           $set: req.body,
         },
         { new: true }
       );
-      res.status(200).json(updatedUserSchema);
+      res.status(200).json(updatedUser);
     } catch (err) {
       res.status(500).json(err);
     }
@@ -39,10 +39,10 @@ router.put("/:id", async (req, res) => {
 router.delete("/:id", async (req, res) => {
   if (req.body.userId === req.params.id) {
     try {
-      const user = await UserSchema.findById(req.params.id);
+      const user = await User.findById(req.params.id);
       try {
-        await PostSchema.deleteMany({ username: user.username });
-        await UserSchema.findByIdAndDelete(req.params.id);
+        await Post.deleteMany({ username: user.username });
+        await User.findByIdAndDelete(req.params.id);
         res.status(200).json("User has been deleted...");
       } catch (err) {
         res.status(500).json(err);
@@ -58,7 +58,7 @@ router.delete("/:id", async (req, res) => {
 //GET USER
 router.get("/:id", async (req, res) => {
   try {
-    const user = await UserSchema.findById(req.params.id);
+    const user = await User.findById(req.params.id);
     const { password, ...others } = user._doc;
     res.status(200).json(others);
   } catch (err) {
@@ -67,4 +67,4 @@ router.get("/:id", async (req, res) => {
 });
 
 
-export default router
+export default router;

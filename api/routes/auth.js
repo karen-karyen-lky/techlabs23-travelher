@@ -1,6 +1,5 @@
 import express from "express";
-import { register, login, logout } from "../controllers/auth.js";
-import UserSchema from "../models/User.js";
+import User from "../models/User.js";
 import bcrypt from "bcrypt";
 
 const router = express.Router();
@@ -11,13 +10,13 @@ router.post("/register", async (req, res) => {
     try{
         const salt = await bcrypt.genSalt(10);
         const hashedPass = await bcrypt.hash(req.body.password, salt);
-        const newUserSchema = new UserSchema({
+        const newUser = new User({
             username: req.body.username,
             email: req.body.email.email,
-            password: req.body.hashedPass,
+            password: hashedPass,
         })
 
-        const user = await newUserSchema.save();
+        const user = await newUser.save();
         res.status(200).json(user);
     } catch(err){
         res.status(500).json(err);
@@ -28,7 +27,7 @@ router.post("/register", async (req, res) => {
 //LOGIN<-->LOGOUT
 router.post("/login", async (req, res) => {
   try {
-    const user = await UserSchema.findOne({ username: req.body.username });
+    const user = await User.findOne({ username: req.body.username });
     !user && res.status(400).json("Wrong credentials!");
 
     const validated = await bcrypt.compare(req.body.password, user.password);
@@ -41,7 +40,7 @@ router.post("/login", async (req, res) => {
   }
 });
 
-router.post("/logout", logout);
+//router.post("/logout", logout);
 //todo
 
 //module.exports = router;

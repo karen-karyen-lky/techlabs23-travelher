@@ -1,20 +1,87 @@
-$lightPurple: #ccccff;
-$lightPink:  #f2bfbf;
-$sand: #e6dada;
+$lightPurple: #CCCCFF;
+$lightPink:  #F2BFBF;
+$sand: #E6DADA;
 $darkPurple: #8080FF;
-
 .app {
   display: flex;
   justify-content: center;
+
+  //HERO
+  
+  .home-container {
+    height: 400px;
+    .home-text-section{
+      width: 65%;
+      float: left;
+      margin-top: 100px;
+      .primary-heading{
+        color: $lightPurple;
+        font-size: 42px;
+      }
+      .primary-text{
+        margin-top: 5px;
+      }
+    }
+    .home-banner-container{
+      margin-left: 65%;
+      height:10px;
+    }
+  }
+
+  //Facts
+
+  .facts{
+    .dot-container {
+      display: flex; /* Use flex to horizontally align the circles */
+      justify-content: center; /* Center align the circles horizontally */
+      align-items: center; /* Center align the circles vertically */
+      color: white;
+      margin-top: 80px;
+    }
+
+    .description{
+      color: $darkPurple;
+      /* Style the parent container as a horizontal list */
+      .horizontal-list {
+        list-style: none;
+        justify-content: center; 
+        align-items: center;
+        display: flex; /* Use flexbox for horizontal layout */
+        padding: 0; /* Remove default padding */
+        text-align: center;
+      }
+
+      /* Style the individual list items */
+      .horizontal-list li {
+        width: 200px;
+        margin-right: 20px; /* Add space between items */
+        padding: 5px 10px;
+        border: 1px solid $sand;
+        border-radius: 5px;
+      }
+    }
+
+    .dot {
+      height: 100px;
+      width: 100px;
+      background-color: $lightPurple; /* Use your color code here */
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0 55px; /* Adjust margin as needed */
+      text-align: center; /* Center align text inside circle */
+      line-height: 100px; /* Vertically center the text inside circle */
+      font-size: 18px; /* Adjust font size as needed */
+    }
+  
+  }
+
   .container {
     width: 1024px;
-
     .link {
       text-decoration: none;
       color: inherit;
     }
     //LOGIN & REGISTER
- 
     .auth {
       display: flex;
       flex-direction: column;
@@ -22,13 +89,12 @@ $darkPurple: #8080FF;
       justify-content: center;
       height: 100vh;
       background-color: $lightPurple;
-
       h1 {
-        font-size: 20px;
-        color: teal;
+        font-size: 30px;
+        color: white;
         margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
       }
-
       form {
         display: flex;
         flex-direction: column;
@@ -36,36 +102,30 @@ $darkPurple: #8080FF;
         background-color: white;
         width: 200px;
         gap: 20px;
-
         input {
           padding: 10px;
           border: none;
           border-bottom: 1px solid gray;
         }
-
         button {
           padding: 10px;
           border: none;
-          background-color: teal;
+          background-color: #8080FF;
           cursor: pointer;
           color: white;
         }
-
         p {
           font-size: 12px;
           color: red;
           text-align: center;
         }
-
         span {
           font-size: 12px;
           text-align: center;
         }
       }
     }
-
     //NAVBAR
-
     .navbar {
       .container {
         padding: 10px 0px;
@@ -81,16 +141,13 @@ $darkPurple: #8080FF;
           display: flex;
           align-items: center;
           gap: 10px;
-
           h6 {
             font-size: 16px;
             font-weight: 300;
           }
-
           span {
             cursor: pointer;
           }
-
           .write {
             background-color: $lightPurple;
             width: 50px;
@@ -101,23 +158,19 @@ $darkPurple: #8080FF;
             justify-content: center;
             font-weight: 300;
             border: 1px solid white;
-
             &:hover {
-              color: teal;
+              color: #8080FF;
               background-color: white;
-              border: 1px solid teal;
+              border: 1px solid #8080FF;
             }
           }
         }
       }
     }
-
     //FOOTER
-
     footer {
       margin-top: 100px;
-      padding: 20px;
-      // background-color: $lightPurple;
+      // padding: 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -127,27 +180,23 @@ $darkPurple: #8080FF;
       }
     }
 
-    //HOME
+    //BLOG
 
-    .home {
+    .blog {
       .posts {
         margin-top: 50px;
         display: flex;
         flex-direction: column;
         gap: 150px;
-
         .post {
           display: flex;
           gap: 100px;
-
           &:nth-child(2n + 1) {
             flex-direction: row-reverse;
           }
-
           .img {
             flex: 2;
             position: relative;
-
             &::after {
               content: "";
               width: 100%;
@@ -158,28 +207,23 @@ $darkPurple: #8080FF;
               left: -20px;
               z-index: -1;
             }
-
             img {
               width: 100%;
               max-height: 400px;
               object-fit: cover;
             }
           }
-
           .content {
             flex: 3;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-
             h1 {
               font-size: 48px;
             }
-
             p {
               font-size: 18px;
             }
-
             button {
               width: max-content;
               padding: 10px 20px;
@@ -189,7 +233,6 @@ $darkPurple: #8080FF;
               background-color: white;
               border: 1px solid $darkPurple;
               color: $darkPurple;
-
               &:hover {
                 border: 1px solid white;
                 background-color: $lightPurple;
@@ -200,25 +243,20 @@ $darkPurple: #8080FF;
         }
       }
     }
-
     //SINGLE
-
     .single {
       display: flex;
       gap: 50px;
-
       .content {
         flex: 5;
         display: flex;
         flex-direction: column;
         gap: 30px;
-
         img {
           width: 100%;
           height: 300px;
           object-fit: cover;
         }
-
         .user {
           display: flex;
           align-items: center;
@@ -230,28 +268,23 @@ $darkPurple: #8080FF;
             border-radius: 50%;
             object-fit: cover;
           }
-
           span {
             font-weight: bold;
           }
         }
-
         .edit {
           display: flex;
           gap: 5px;
-
           img {
             width: 20px;
             height: 20px;
             cursor: pointer;
           }
         }
-
         h1 {
           font-size: 42px;
           color: #333;
         }
-
         p {
           text-align: justify;
           line-height: 30px;
@@ -262,36 +295,30 @@ $darkPurple: #8080FF;
         display: flex;
         flex-direction: column;
         gap: 25px;
-
         h1 {
           font-size: 20px;
           color: #555;
         }
-
         .post {
           display: flex;
           flex-direction: column;
           gap: 10px;
-
           img {
             width: 100%;
             height: 200px;
             object-fit: cover;
           }
-
           h2 {
             color: #555;
           }
-
           button {
             width: max-content;
             padding: 7.5px 15px;
             border: none;
             cursor: pointer;
-            color: teal;
+            color: #8080FF;
             background-color: white;
-            border: 1px solid teal;
-
+            border: 1px solid #8080FF;
             &:hover {
               border: 1px solid white;
               background-color: $lightPurple;
@@ -301,43 +328,35 @@ $darkPurple: #8080FF;
         }
       }
     }
-
     //WRITE
-
     .add {
       margin-top: 20px;
       display: flex;
       gap: 20px;
-
       .content {
         flex: 5;
         display: flex;
         flex-direction: column;
         gap: 20px;
-
         input {
           padding: 10px;
           border: 1px solid lightgray;
         }
-
         .editorContainer {
           height: 300px;
           overflow: scroll;
           border: 1px solid lightgray;
-
           .editor {
             height: 100%;
             border: none;
           }
         }
       }
-
       .menu {
         flex: 2;
         display: flex;
         flex-direction: column;
         gap: 20px;
-
         .item {
           border: 1px solid lightgray;
           padding: 10px;
@@ -347,41 +366,36 @@ $darkPurple: #8080FF;
           justify-content: space-between;
           font-size: 12px;
           color: #555;
-
           h1{
             font-size: 20px;
           }
-
           .file{
             text-decoration: underline;
             cursor: pointer;
           }
-
           .buttons{
             display: flex;
             justify-content: space-between;
-
             :first-child{
               cursor: pointer;
-              color: teal;
+              color: #8080FF;
               background-color: white;
-              border: 1px solid teal;
+              border: 1px solid #8080FF;
               padding: 3px 5px;
             }
             :last-child{
               cursor: pointer;
               color: white;
-              background-color: teal;
-              border: 1px solid teal;
+              background-color: #8080FF;
+              border: 1px solid #8080FF;
               padding: 3px 5px;
             }
           }
-
           .cat{
             display: flex;
             align-items: center;
             gap: 2px;
-            color: teal;
+            color: #8080FF;
           }
         }
       }

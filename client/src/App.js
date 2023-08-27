@@ -15,6 +15,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Blog from "./pages/Blog"
 import Duesseldorf from "./pages/duesseldorf";
+import Distributetsp from "./pages/distributetsp";
 import "./style.scss"
 
 
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
       {
         path: "/duesseldorf",
         element: <Duesseldorf />,
+      },
+      {
+        path: "/distributetsp",
+        element: <Distributetsp />,
       },
       {
         path: "/blog",

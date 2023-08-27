@@ -4,8 +4,6 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import axios from "axios";
 
-<Link to="duesseldorf.jsx">Go to Your Page</Link>
-
 const Blog = () => { 
     // const [posts, setPosts] = useState([]);
 
@@ -61,7 +59,7 @@ const Blog = () => {
             <div className="content">
               {/* Link Titelüberschriften */}
               {post.id === 1 ? (
-              <Link className="link" to={`/distributetsp`}>
+              <Link className="link" to={`/TopRatedPlaces`}>
                 <h1>{post.title}</h1>
               </Link>
               ) : post.id === 2 ? (<Link className="link" to={`/duesseldorf`}>
@@ -74,13 +72,10 @@ const Blog = () => {
               )
               }
 
-{/* Testblock */}
-
-
                {/* Link Read More Buttons */}
               <p>{getText(post.desc)}</p>
               {post.id === 1 ? (
-                <Link to="/distributetsp" className="read-more-button">
+                <Link to="/TopRatedPlaces" className="read-more-button">
                   <button>Read More</button>
                 </Link>
               ) : post.id === 2 ? (
@@ -93,10 +88,7 @@ const Blog = () => {
                 </Link>
               )
               }
-
-              
-
-            
+                         
             </div>
           </div>
         ))}

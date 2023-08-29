@@ -80,6 +80,86 @@ $darkPurple: #8080FF;
       text-decoration: none;
       color: inherit;
     }
+
+    h3{
+      color: #CCCCFF;
+      font-size: 42px;
+      text-align: left;
+      padding: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .invitation{
+      text-align: left;
+      width: 100%; /* Container nimmt die gesamte Breite ein */
+      height: 5vh; /* Container nimmt die gesamte Bildschirmhöhe ein */
+      display: flex; /* Flex-Layout verwenden */
+      justify-content: center; /* Horizontal zentrieren */
+      align-items: center; /* Vertikal zentrieren */
+      padding: 20px;
+    }
+    .container {
+      display: flex; /* Flex-Layout verwenden, um die Felder nebeneinander anzuordnen */
+  }
+  
+  /* Stile für die Elemente */
+  .element {
+      width: 300px;
+      height: 150px;
+      background-color: $lightPurple;
+      text-align: center;
+      line-height: 150px;
+      color: #fff;
+      position: relative;
+      cursor: pointer;
+      margin-right: 20px; /* Abstand zwischen den Feldern */
+      border-radius: 10px;
+      transform: perspective(1000px) rotateY(0deg);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Stile für den initialen Text */
+  .initial-text {
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* Stile für den zusätzlichen Text */
+  .additional-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      text-align: left;
+      padding: 10px;
+      box-sizing: border-box;
+      font-size: 16px;
+      line-height: 25px;
+     font-weight: 400;
+
+  }
+  
+  .element:hover {
+    width: 400px; /* Vergrößere die Breite beim Hover */
+    height: 200px; /* Vergrößere die Höhe beim Hover */
+}
+
+.element:hover .initial-text {
+    opacity: 0;
+}
+
+.element:hover .additional-text {
+    opacity: 1;
+}
+
+.goodbye{
+  font-size: 15px;
+  text-align: left;
+}
+
     //LOGIN & REGISTER
     .auth {
       display: flex;

@@ -1,4 +1,5 @@
 import React from 'react'
+import landing from '../img/landing.jpg';
 
 const Facts = () => {
   return (
@@ -26,9 +27,14 @@ const Facts = () => {
         <br></br>
         <br></br>
         <br></br>
+        <br></br>
           <div>
+          <img src={landing} alt="landing" id="landing"/>
+          <br></br>
             <h3>Welcome to TravelHer:<br></br> 
                 Stories from Adventurous Women</h3>
+                <br></br>
+                <br></br>
                 <br></br>
           </div>
               <div className='invitation'>
@@ -37,6 +43,8 @@ const Facts = () => {
               </span>
               </div>
                 <br></br>
+                    <br></br>
+                    <br></br>
                     <br></br>
                     <div class="container">
         <div class="element">

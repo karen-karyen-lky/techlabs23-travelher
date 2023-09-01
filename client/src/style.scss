@@ -40,7 +40,8 @@ $darkPurple: #8080FF;
     }
 
     .description{
-      color: $darkPurple;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
       /* Style the parent container as a horizontal list */
       .horizontal-list {
         list-style: none;
@@ -56,16 +57,21 @@ $darkPurple: #8080FF;
         width: 200px;
         margin-right: 20px; /* Add space between items */
         padding: 5px 10px;
-        border: 1px solid $sand;
-        border-radius: 5px;
+        border: 1px solid $lightPurple;
+        border-radius: 7px;
+        background-color: $lightPurple;
       }
     }
 
     .dot {
       height: 100px;
       width: 100px;
-      background-color: $lightPurple; /* Use your color code here */
+      background-color: white; /* Use your color code here */
+      color: $lightPurple;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
       border-radius: 50%;
+      border-color: $lightPurple;
+      border: 2px solid $lightPurple;
       display: inline-block;
       margin: 0 55px; /* Adjust margin as needed */
       text-align: center; /* Center align text inside circle */
@@ -81,12 +87,19 @@ $darkPurple: #8080FF;
       color: inherit;
     }
 
+#landing{
+  width: 300px; /* Neue Breite des Bildes */
+    height: auto; /* Automatische Anpassung der Höhe, um das Seitenverhältnis zu erhalten */
+    position: absolute; /* Absolute Positionierung */
+    top: 800px; /* Abstand von oben */
+    left: 700px; 
+}
     h3{
       color: #CCCCFF;
-      font-size: 42px;
+      font-size: 37px;
       text-align: left;
       padding: 20px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     .invitation{
@@ -156,8 +169,15 @@ $darkPurple: #8080FF;
 }
 
 .goodbye{
-  font-size: 15px;
-  text-align: left;
+  font-size: 18px;
+  text-align: center;
+}
+
+.container2{
+  background-color: $lightPurple;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
     //LOGIN & REGISTER
@@ -474,7 +494,8 @@ $darkPurple: #8080FF;
         }
         h1 {
           font-size: 42px;
-          color: #333;
+          color: $lightPurple;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
         }
         p {
           text-align: justify;

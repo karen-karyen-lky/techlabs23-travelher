@@ -17,6 +17,7 @@ const Hero = () => {
       <div className="home-banner-container">
         <img src={BannerFoto} alt="" height="400"/>
       </div>
+      
     </div>
   )
 }

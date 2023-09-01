@@ -40,7 +40,8 @@ $darkPurple: #8080FF;
     }
 
     .description{
-      color: $darkPurple;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
       /* Style the parent container as a horizontal list */
       .horizontal-list {
         list-style: none;
@@ -56,16 +57,21 @@ $darkPurple: #8080FF;
         width: 200px;
         margin-right: 20px; /* Add space between items */
         padding: 5px 10px;
-        border: 1px solid $sand;
-        border-radius: 5px;
+        border: 1px solid $lightPurple;
+        border-radius: 7px;
+        background-color: $lightPurple;
       }
     }
 
     .dot {
       height: 100px;
       width: 100px;
-      background-color: $lightPurple; /* Use your color code here */
+      background-color: white; /* Use your color code here */
+      color: $lightPurple;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
       border-radius: 50%;
+      border-color: $lightPurple;
+      border: 2px solid $lightPurple;
       display: inline-block;
       margin: 0 55px; /* Adjust margin as needed */
       text-align: center; /* Center align text inside circle */
@@ -80,6 +86,100 @@ $darkPurple: #8080FF;
       text-decoration: none;
       color: inherit;
     }
+
+#landing{
+  width: 300px; /* Neue Breite des Bildes */
+    height: auto; /* Automatische Anpassung der Höhe, um das Seitenverhältnis zu erhalten */
+    position: absolute; /* Absolute Positionierung */
+    top: 800px; /* Abstand von oben */
+    left: 700px; 
+}
+    h3{
+      color: #CCCCFF;
+      font-size: 37px;
+      text-align: left;
+      padding: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .invitation{
+      text-align: left;
+      width: 100%; /* Container nimmt die gesamte Breite ein */
+      height: 5vh; /* Container nimmt die gesamte Bildschirmhöhe ein */
+      display: flex; /* Flex-Layout verwenden */
+      justify-content: center; /* Horizontal zentrieren */
+      align-items: center; /* Vertikal zentrieren */
+      padding: 20px;
+    }
+    .container {
+      display: flex; /* Flex-Layout verwenden, um die Felder nebeneinander anzuordnen */
+  }
+  
+  /* Stile für die Elemente */
+  .element {
+      width: 300px;
+      height: 150px;
+      background-color: $lightPurple;
+      text-align: center;
+      line-height: 150px;
+      color: #fff;
+      position: relative;
+      cursor: pointer;
+      margin-right: 20px; /* Abstand zwischen den Feldern */
+      border-radius: 10px;
+      transform: perspective(1000px) rotateY(0deg);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Stile für den initialen Text */
+  .initial-text {
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* Stile für den zusätzlichen Text */
+  .additional-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      text-align: left;
+      padding: 10px;
+      box-sizing: border-box;
+      font-size: 16px;
+      line-height: 25px;
+     font-weight: 400;
+
+  }
+  
+  .element:hover {
+    width: 400px; /* Vergrößere die Breite beim Hover */
+    height: 200px; /* Vergrößere die Höhe beim Hover */
+}
+
+.element:hover .initial-text {
+    opacity: 0;
+}
+
+.element:hover .additional-text {
+    opacity: 1;
+}
+
+.goodbye{
+  font-size: 18px;
+  text-align: center;
+}
+
+.container2{
+  background-color: $lightPurple;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
     //LOGIN & REGISTER
     .auth {
       display: flex;
@@ -394,7 +494,8 @@ $darkPurple: #8080FF;
         }
         h1 {
           font-size: 42px;
-          color: #333;
+          color: $lightPurple;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
         }
         p {
           text-align: justify;

@@ -3,29 +3,29 @@ import mongoose from "mongoose";
 const Post = new mongoose.Schema(
     {
         title:{
-            type:String,
-            required:true,
-            unique:true
+            type: String,
+            required: true,
+            unique: true,
         },
         desc:{
-            type:String,
-            required:true,
+            type: String,
+            required: true,
         },
         photo:{
-            type:String,
-            required:false,
+            type: String,
+            required: false,
         },
         username:{
-            type:String,
-            required:true,            
+            type: String,
+            required: true,            
         },
-        category:{
+        categories:{
             type: Array,
             required: false,
         },
     },
-    { timestamps:true }
+    { timestamps: true }
 );
 
-export default Post;
+export default { Post };
 //module.exports = mongoose.model("Post", PostSchema)

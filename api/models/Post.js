@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const Post = new mongoose.Schema(
+const PostSchema = new mongoose.Schema(
     {
         title:{
             type: String,
@@ -26,6 +26,6 @@ const Post = new mongoose.Schema(
     },
     { timestamps: true }
 );
-
+const Post = mongoose.model("Post", PostSchema);
 export default { Post };
 //module.exports = mongoose.model("Post", PostSchema)

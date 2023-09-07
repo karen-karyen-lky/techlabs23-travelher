@@ -41,7 +41,7 @@ router.delete("/:id", async (req, res) => {
     try {
       const user = await User.findById(req.params.id);
       try {
-        await Post.deleteMany({ username: user.username });
+        await Post.deleteMany({ username: user.username }); //das gibt ein leeres Array aus, sollte aber bestenfalls zur nächsten Zeile übergehen und 200 aussenden
         await User.findByIdAndDelete(req.params.id);
         res.status(200).json("User has been deleted...");
       } catch (err) {

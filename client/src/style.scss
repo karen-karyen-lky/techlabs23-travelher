@@ -42,6 +42,7 @@ $darkPurple: #8080FF;
     .description{
       color: white;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      margin-left: 10px;
       /* Style the parent container as a horizontal list */
       .horizontal-list {
         list-style: none;
@@ -64,7 +65,7 @@ $darkPurple: #8080FF;
     }
 
     .dot {
-      height: 100px;
+      height: 90px;
       width: 100px;
       background-color: white; /* Use your color code here */
       color: $lightPurple;
@@ -75,7 +76,7 @@ $darkPurple: #8080FF;
       display: inline-block;
       margin: 0 55px; /* Adjust margin as needed */
       text-align: center; /* Center align text inside circle */
-      line-height: 100px; /* Vertically center the text inside circle */
+      line-height: 90px; /* Vertically center the text inside circle */
       font-size: 18px; /* Adjust font size as needed */
     }
   }
@@ -87,13 +88,7 @@ $darkPurple: #8080FF;
       color: inherit;
     }
 
-#landing{
-  width: 300px; /* Neue Breite des Bildes */
-    height: auto; /* Automatische Anpassung der Höhe, um das Seitenverhältnis zu erhalten */
-    position: absolute; /* Absolute Positionierung */
-    top: 800px; /* Abstand von oben */
-    left: 700px; 
-}
+
     h3{
       color: #CCCCFF;
       font-size: 37px;
@@ -110,6 +105,7 @@ $darkPurple: #8080FF;
       justify-content: center; /* Horizontal zentrieren */
       align-items: center; /* Vertikal zentrieren */
       padding: 20px;
+
     }
     .container {
       display: flex; /* Flex-Layout verwenden, um die Felder nebeneinander anzuordnen */
@@ -129,35 +125,49 @@ $darkPurple: #8080FF;
       border-radius: 10px;
       transform: perspective(1000px) rotateY(0deg);
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      font-size: 18px; /* Adjust font size as needed */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      transform-style: preserve-3d;
+      transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Added background-color transition */
   }
   
   /* Stile für den initialen Text */
   .initial-text {
       opacity: 1;
+      font-size: 20px;
+      font-weight: 500;
       transition: opacity 0.3s ease-in-out;
   }
   
   /* Stile für den zusätzlichen Text */
   .additional-text {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
-      text-align: left;
-      padding: 10px;
-      box-sizing: border-box;
-      font-size: 16px;
-      line-height: 25px;
-     font-weight: 400;
-
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    text-align: center; /* Horizontal centering */
+    display: flex;
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
   }
   
   .element:hover {
     width: 400px; /* Vergrößere die Breite beim Hover */
     height: 200px; /* Vergrößere die Höhe beim Hover */
+      transform: perspective(1000px) rotateY(3deg); /* Reduced rotation angle */
+      background-color: #8080FF; /* Change back to #8080FF */
 }
 
 .element:hover .initial-text {
@@ -166,11 +176,12 @@ $darkPurple: #8080FF;
 
 .element:hover .additional-text {
     opacity: 1;
+    font-size: 16px; /* Adjust font size as needed */
 }
 
 .goodbye{
   font-size: 18px;
-  text-align: center;
+  text-align: left;
 }
 
 .container2{

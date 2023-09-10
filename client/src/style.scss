@@ -28,6 +28,27 @@ $darkPurple: #8080FF;
     }
   }
 
+    // HERO Flip: Join us
+    .home-container-flip {
+      height: 320px;
+      .home-text-section-flip{
+        width: 60%;
+        float: right;
+        margin-top: 120px;
+        .primary-heading{
+          color: $lightPurple;
+          font-size: 42px;
+        }
+        .primary-text{
+          margin-top: 5px;
+        }
+      }
+      .home-banner-container-flip{
+        height:10px;
+      }
+    }
+
+
   //Facts
 
   .facts{
@@ -79,6 +100,7 @@ $darkPurple: #8080FF;
       line-height: 90px; /* Vertically center the text inside circle */
       font-size: 18px; /* Adjust font size as needed */
     }
+
   }
 
   .container {
@@ -93,20 +115,9 @@ $darkPurple: #8080FF;
       color: #CCCCFF;
       font-size: 37px;
       text-align: left;
-      padding: 20px;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     }
 
-    .invitation{
-      text-align: left;
-      width: 100%; /* Container nimmt die gesamte Breite ein */
-      height: 5vh; /* Container nimmt die gesamte Bildschirmhöhe ein */
-      display: flex; /* Flex-Layout verwenden */
-      justify-content: center; /* Horizontal zentrieren */
-      align-items: center; /* Vertikal zentrieren */
-      padding: 20px;
-
-    }
     .container {
       display: flex; /* Flex-Layout verwenden, um die Felder nebeneinander anzuordnen */
   }
@@ -282,7 +293,8 @@ $darkPurple: #8080FF;
     //FOOTER
     footer {
       margin-top: 100px;
-      // padding: 20px;
+      margin-bottom: 10px;
+      padding: 30px;
       display: flex;
       align-items: center;
       justify-content: space-between;

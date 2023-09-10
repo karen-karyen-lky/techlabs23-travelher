@@ -1,5 +1,5 @@
 import React from 'react'
-import landing from '../img/landing.jpg';
+
 
 const Facts = () => {
   return (
@@ -26,15 +26,10 @@ const Facts = () => {
         <br></br>
         <br></br>
         <br></br>
-        <br></br>
-        <br></br>
           <div>
-          <img src={landing} alt="landing" id="landing"/>
-          <br></br>
+          
             <h3>Welcome to TravelHer:<br></br> 
                 Stories from Adventurous Women</h3>
-                <br></br>
-                <br></br>
                 <br></br>
           </div>
               <div className='invitation'>
@@ -45,26 +40,25 @@ const Facts = () => {
                 <br></br>
                     <br></br>
                     <br></br>
-                    <br></br>
                     <div class="container">
         <div class="element">
             <p class="initial-text">Why travel alone?</p>
-            <p class="additional-text">Traveling alone is a transformative experience that can expand your horizons and strengthen your independence. It allows you to make your own decisions, forge new friendships, and experience moments of self-reflection that are only possible on such journeys</p>
+            <p class="additional-text">Traveling alone is a transformative experience that can expand your horizons and strengthen your independence.<br></br> It allows you to make your own decisions, forge new friendships, and experience moments of self-reflection that are only possible on such journeys</p>
         </div>
         <div class="element">
             <p class="initial-text">Our Diversity</p>
-            <p class="additional-text">Whether you're an experienced adventurer or just starting to explore the world – there's a place for you here. We welcome women of all ages, ethnic backgrounds, and experience levels. Our community is diverse, just like the places we explore</p>
+            <p class="additional-text">Whether you're an experienced adventurer or just starting to explore the world – there's a place for you here. <br></br>We welcome women of all ages, ethnic backgrounds, and experience levels. <br></br>Our community is diverse, just like the places we explore</p>
         </div>
         <div class="element">
             <p class="initial-text">What We're Looking For</p>
-            <p class="additional-text">We encourage women to share their stories and experiences on our pages. This could be a travel diary from your recent adventure, a guide to safe solo travel, or a deep dive into the cultural experiences you've had. We believe that every story is inspiring and can encourage other women to embark on their own journeys.</p>
+            <p class="additional-text">We encourage women to share their stories and experiences on our pages. <br></br>This could be a travel diary from your recent adventure, a guide to safe solo travel, or a deep dive into the cultural experiences you've had.<br></br>We believe that every story is inspiring and can encourage other women to embark on their own journeys.</p>
         </div>
     </div>
         <br></br>
     <div class="container">
     <div class="element">
             <p class="initial-text">Share Your Contribution</p>
-            <p class="additional-text">Would you like to share your travel story?<br></br> It's easy! Click on "Submit a Post" and upload your article.<br></br>Our editorial team will review it and provide feedback before it's published. We want to ensure that every story gets the attention it deserves</p>
+            <p class="additional-text">Would you like to share your travel story?<br></br> It's easy! Click on "Submit a Post" and upload your article.<br></br>Our editorial team will review it and provide feedback before it's published. We want to ensure that every story gets the attention it deserves.</p>
         </div> 
         <div class="element">
             <p class="initial-text">Our Vision</p>
@@ -76,15 +70,14 @@ const Facts = () => {
         </div> 
         
     </div>
-    <br></br>
+    {/* <br></br>
     <br></br>
     <br></br>
           <div class="container2">
-          <div class="goodbye">
-
-<p>Join us on this exciting journey as we celebrate the world, ourselves, and the power of solo travel!<br></br></p>
+            <div class="goodbye">
+                <p>Join us on this exciting journey as we celebrate the world, ourselves, and the power of solo travel!<br></br></p>
             </div>       
-            </div>
+            </div> */}
     </div>
   )
 }

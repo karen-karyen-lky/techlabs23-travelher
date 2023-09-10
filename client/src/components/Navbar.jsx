@@ -15,8 +15,11 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="links">
+        <Link className="link" to="/blobhighlight">
+            <h6>HIGHLIGHT</h6>
+          </Link>
           <Link className="link" to="/blog">
-            <h6>BLOG</h6>
+            <h6>Blog</h6>
           </Link>
           {/* <Link className="link" to="/?cat=science">
             <h6>SCIENCE</h6>
@@ -41,11 +44,13 @@ const Navbar = () => {
               Login
             </Link>
           )}
-          <span className="write">
+          {currentUser ? (
+            <span className="write">
             <Link className="link" to="/write">
               Write
             </Link>
-          </span>
+            </span>
+          ) : ( "" )}
         </div>
       </div>
     </div>

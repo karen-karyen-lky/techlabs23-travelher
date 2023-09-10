@@ -7,9 +7,11 @@ const Footer = () => {
       <img src={Logo} alt="" />
       <span>
         Made with ♥️ and you.
-      </span>
+      </span> 
     </footer>
+    
   );
+ 
 };
 
 export default Footer;

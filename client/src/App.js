@@ -13,6 +13,7 @@ import Single from "./pages/Single";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Blog from "./pages/Blog"
+import Highlight from "./pages/Highlight"
 import Duesseldorf from "./pages/duesseldorf";
 import TopRatedPlaces from "./pages/TopRatedPlaces";
 import Germany from "./pages/Germany";
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog />,
+      }, 
+      {
+        path: "/blobhighlight",
+        element: <Highlight />,
       }, 
       {
         path: "/TopRatedPlaces",

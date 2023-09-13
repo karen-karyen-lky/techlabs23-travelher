@@ -2,7 +2,7 @@
 
 # TravelHer
 
-TravelHer is a platform designed for solo women travelers to share their experiences, stories, and travel tips with the world. Whether you're a seasoned explorer or embarking on your first solo adventure, TravelHer is your space to inspire and be inspired.
+TravelHer is a platform designed for solo women travelers to share their experiences, stories, and travel tips with the world. Whether you're a seasoned explorer or embarking on your first solo adventure, TravelHer is your space to inspire and be inspired. The framework of the website are refer to https://www.youtube.com/watch?v=LelifxOrzvw&t=0s as most of the team members in our project are having first experience to code. And this website acts as a good tutorial and guide for us to start to code :)
 
 ## Table of Contents
 

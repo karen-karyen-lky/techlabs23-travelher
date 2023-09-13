@@ -54,4 +54,6 @@ const Duesseldorf = () => {
   );
 };
 
+/* Bildquelle: https://a.cdn-hotels.com/gdcs/production61/d1121/6dfd3cfe-d31b-4514-b3af-aee8536223d1.jpg */
+
 export default Duesseldorf;

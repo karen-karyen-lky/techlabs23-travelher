@@ -110,6 +110,35 @@ $darkPurple: #8080FF;
       color: inherit;
     }
 
+    .bild-container {
+      display: flex; /* Verwenden Sie Flexbox für die horizontale Anordnung */
+      justify-content: space-between;
+  }
+
+    #Strand{
+        width: 25%;
+        height: auto;
+        /* Bildquelle: https://unterwegsmitkind.com/wp-content/uploads/2017/12/Lieblingsbild.jpg */
+    } 
+    #Wald{
+        width: 25%;
+        height: auto;
+      /* Bildquelle:https://fraeulein-draussen.de/wp-content/uploads/2021/03/P6130751.jpg */
+}
+    #Wasser{
+        width: 25%;
+        height: auto;
+        /* Bildquelle: https://blog.pixum.de/wp-content/uploads/2019/05/smartphone-frau-strohhut-strand-meer.jpg */
+}
+.polaroid {
+  position: relative;
+  display: inline-block;
+  border: 10px solid white; /* Dicker weißer Rand */
+  border-bottom-width: 90px; /* Dickerer Rand für die untere Seite */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Schatten für den Polaroid-Effekt */
+  padding: 10px; /* Innenabstand für den Polaroid-Effekt */
+  margin: 10px;
+}
 
     h3{
       color: #CCCCFF;
@@ -200,6 +229,10 @@ $darkPurple: #8080FF;
   text-align: center;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #0056b3;
 }
 
     //LOGIN & REGISTER
@@ -637,4 +670,3 @@ $darkPurple: #8080FF;
     }
   }
 }
-  

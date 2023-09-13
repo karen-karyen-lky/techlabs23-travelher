@@ -1,5 +1,9 @@
 import React from 'react'
-import JoinUsFoto from "../img/join_us.jpeg"
+import JoinUsFoto from "../img/join_us.jpeg";
+import Strand from '../img/Strand.jpg';
+import Wald from '../img/Wald.jpg';
+import Wasser from '../img/Wasser.jpg';
+
 
 const Facts = () => {
   return (
@@ -26,7 +30,20 @@ const Facts = () => {
         <br></br>
         <br></br>
         <br></br>
+        <br></br>
           <div>
+            <div class="bild-container">
+          <img src={Strand} alt="Strand" id="Strand" className="polaroid" />
+          <br></br>
+          <img src={Wald} alt="Wald" id="Wald" className="polaroid"/>
+          <br></br>
+          <img src={Wasser} alt="Wasser" id="Wasser" className="polaroid"/>
+          <br></br>
+          </div>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
             <h3>Welcome to TravelHer:<br></br> 
                 Stories from Adventurous Women</h3>
                 <br></br>  
@@ -82,7 +99,9 @@ const Facts = () => {
     </div>
 
     </div>
-  )
-}
+        );
+    };
+    
+
 
 export default Facts

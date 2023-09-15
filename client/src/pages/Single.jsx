@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+/* import React, { useEffect, useState } from "react";
 import Edit from "../img/edit.png";
 import Delete from "../img/delete.png";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -7,9 +7,22 @@ import axios from "axios";
 import moment from "moment";
 import { useContext } from "react";
 import { AuthContext } from "../context/authContext";
-import DOMPurify from "dompurify";
+import DOMPurify from "dompurify"; */
 
-const Single = () => {
+import Sidebar from "../components/sidebar/sidebar";
+import SinglePost from "../components/singlePost/SinglePost.jsx";
+
+
+export default function Single() {
+  return (
+    <div className="single">
+      <SinglePost/>
+      <Sidebar />
+    </div>
+  );
+}
+
+/* const Single = () => {
   const [post, setPost] = useState({});
 
   const location = useLocation();
@@ -45,6 +58,7 @@ const Single = () => {
     return doc.body.textContent
   }
 
+
   return (
     <div className="single">
       <div className="content">
@@ -78,4 +92,4 @@ const Single = () => {
   );
 };
 
-export default Single;
+export default Single; */

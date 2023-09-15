@@ -15,6 +15,8 @@ import Footer from "./components/Footer";
 import Blog from "./pages/Blog"
 import Highlight from "./pages/Highlight"
 import Duesseldorf from "./pages/duesseldorf";
+import Tokyo from "./pages/tokyo";
+import Solotraveltips from "./pages/SoloTravelTips";
 import TopRatedPlaces from "./pages/TopRatedPlaces";
 import Germany from "./pages/Germany";
 import "./style.scss"
@@ -54,6 +56,10 @@ const router = createBrowserRouter([
         element: <Duesseldorf />,
       },
       {
+        path: "/tokyo",
+        element: <Tokyo />,
+      },
+      {
         path: "/blog",
         element: <Blog />,
       }, 
@@ -65,7 +71,10 @@ const router = createBrowserRouter([
         path: "/TopRatedPlaces",
         element: <TopRatedPlaces />,
       },
-
+      {
+        path: "/SoloTravelPlace",
+        element: <Solotraveltips />,
+      },
       {
         path: "/Germany",
         element: <Germany />,
@@ -80,14 +89,6 @@ const router = createBrowserRouter([
       },
     ],
   },
-/*   {
-    path: "/register",
-    element: <Register />,
-  },
-  {
-    path: "/login",
-    element: <Login />,
-  }, */
 ]);
 
 // to route to other pages as in the folder

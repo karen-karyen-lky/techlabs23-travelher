@@ -1,9 +1,8 @@
 import React from 'react'
-import Edit from '../img/edit.png'
-import Delete from '../img/delete.png'
+// import Edit from '../img/edit.png'
+// import Delete from '../img/delete.png'
 import { Link } from 'react-router-dom'
 import Menu from "../components/Menu";
-import Ddorf from '../img/Ddorf.jpg.webp';
 
 
 
@@ -20,12 +19,12 @@ const Germany = () => {
             <span>Julia</span>
             <p>Posted 2 days ago</p>
           </div>
-          <div className="edit">
+          {/* <div className="edit">
             <Link to={`/write?edit=2`}>
             <img src={Edit} alt="" />
             </Link>
             <img src={Delete} alt="" />
-          </div>
+          </div> */}
         </div>
         <h1>Travel Guide for Women: Discovering Germany</h1>
       <p>Germany, a land of culture, history, and breathtaking landscapes, attracts millions of travelers from around the world every year. For women planning to travel to Germany, there are some important pieces of information that can assist you in your travel preparations.</p>

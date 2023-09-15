@@ -1,6 +1,6 @@
 import React from 'react'
-import Edit from '../img/edit.png'
-import Delete from '../img/delete.png'
+// import Edit from '../img/edit.png'
+// import Delete from '../img/delete.png'
 import { Link } from 'react-router-dom'
 import Menu from "../components/Menu";
 import Ddorf from '../img/Ddorf.jpg.webp';
@@ -16,14 +16,14 @@ const Duesseldorf = () => {
         <div className="user">
           <div className="info">
             <span>Tatjana</span>
-            <p>Posted 2 days ago</p>
+            <p>Posted 8 days ago</p>
           </div>
-          <div className="edit">
+          {/* <div className="edit">
             <Link to={`/write?edit=2`}>
             <img src={Edit} alt="" />
             </Link>
             <img src={Delete} alt="" />
-          </div>
+          </div> */}
         </div>
         <h1>Must do Düsseldorf</h1>
         <p>Düsseldorf is the capital of the German state of North Rhine-Westphalia and a vibrant city with a variety of activities, attractions, and cultural events. As a woman planning to travel to Düsseldorf, there is some important information that can assist you in your travel preparations.<br></br>

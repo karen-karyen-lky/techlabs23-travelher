@@ -25,7 +25,7 @@ const Highlight = () => {
     {
       id: 1,
       title: "Top solo place recommended!",
-      desc: "Düsseldorf, Copenhagen, Munich, etc.",
+      desc: "Düsseldorf, Copenhagen, Munich, Tokyo, etc.",
       img: "https://as1.ftcdn.net/v2/jpg/01/82/52/58/1000_F_182525816_1Nxshlre0x74QHnvcd20ssOJmbOvQDrH.jpg",
     },
     {
@@ -65,14 +65,14 @@ const Highlight = () => {
               ) : post.id === 2 ? (<Link className="link" to={`/duesseldorf`}>
                 <h1>{post.title}</h1>
               </Link>)
-              :
-              (<Link className="link" to={`/duesseldorf`}>
+              : 
+              (<Link className="link" to={`/SoloTravelPlace`}>
                 <h1>{post.title}</h1>
               </Link>
-              )
+              ) 
               }
 
-               {/* Link Read More Buttons */}
+              {/* Link Read More Buttons */}
               <p>{getText(post.desc)}</p>
               {post.id === 1 ? (
                 <Link to="/TopRatedPlaces" className="read-more-button">
@@ -83,7 +83,7 @@ const Highlight = () => {
                   <button>Read More</button>
                 </Link>
               ) : (
-                <Link to="/duesseldorf" className="read-more-button">
+                <Link to="/SoloTravelPlace" className="read-more-button">
                   <button>Read More</button>
                 </Link>
               )

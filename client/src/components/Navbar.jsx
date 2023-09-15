@@ -5,6 +5,7 @@ import Logo from "../img/logo.png";
 
 const Navbar = () => {
   const { currentUser, logout } = useContext(AuthContext);
+  const PF = "http://localhost:5000/images/"
 
   return (
     <div className="navbar">
@@ -51,6 +52,11 @@ const Navbar = () => {
             </Link>
             </span>
           ) : ( "" )}
+          {currentUser ? (
+          <Link to="/settings">
+            <img className="topImg" src={PF+currentUser.profilePic} alt="" />
+          </Link>
+        ) : ('')}
         </div>
       </div>
     </div>

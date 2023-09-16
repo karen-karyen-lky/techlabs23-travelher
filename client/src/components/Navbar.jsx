@@ -54,7 +54,7 @@ const Navbar = () => {
           ) : ( "" )}
           {currentUser ? (
           <Link to="/settings">
-            <img className="topImg" src={PF+currentUser.profilePic} alt="" />
+            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/000000/user-female-circle.png" alt="user-female-circle"/>
           </Link>
         ) : ('')}
         </div>

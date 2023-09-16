@@ -1,7 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "./sidebar.css";
+//import "./sidebar.css";
+
 
 export default function Sidebar() {
   const [cats, setCats] = useState([]);
@@ -18,12 +19,11 @@ export default function Sidebar() {
       <div className="sidebarItem">
         <span className="sidebarTitle">ABOUT ME</span>
         <img
-          src="https://i.pinimg.com/236x/1e/3f/58/1e3f587572a7a7b20bbf1828595a1786--holiday-party-themes-holiday-gift-guide.jpg"
+          src="https://www.hostelworld.com/blog/wp-content/uploads/2017/03/EDITED-travelling-light-taj-mahal-solo-female-travel-india.jpg"
           alt=""
         />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui
-          necessitatibus nostrum illum reprehenderit.
+        "Travel leaves you speechless and then turns you into a storyteller."
         </p>
       </div>
       <div className="sidebarItem">

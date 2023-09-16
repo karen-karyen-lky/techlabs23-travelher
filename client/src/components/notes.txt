@@ -1,0 +1,1 @@
+            <img className="topImg" src={PF+currentUser.profilePic} alt="" />

@@ -102,16 +102,18 @@ return (
   <div className="blog">
     <div className="posts">
       {posts.map((post) => (
-        <div className="post" key={post.id}>
+        <div className="post" key={post._id}>
           <div className="img">
             <img src={`../upload/${post.img}`} alt="" />
           </div>
           <div className="content">
-            <Link className="link" to={`/post/${post.id}`}>
+            <Link className="link" to={`/post/${post._id}`}>
               <h1>{post.title}</h1>
             </Link>
             <p>{getText(post.desc)}</p>
+            <Link className="link" to={`/post/${post._id}`}>
             <button>Read More</button>
+            </Link>
           </div>
         </div>
       ))}

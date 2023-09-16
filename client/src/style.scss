@@ -321,6 +321,9 @@ button:hover {
             }
           }
           .topImg {
+          display: flex;
+          align-items: center;
+          justify-content: center;  
           width: 40px;
           height: 40px;
           border-radius: 50%;
@@ -626,10 +629,6 @@ button:hover {
             border: none;
           }
         }
-        .write {
-          padding-top: 50px;
-        }
-
         .writeImg {
           margin-left: 150px;
           width: 70vw;
@@ -682,7 +681,7 @@ button:hover {
           top: 20px;
           right: 50px;
           color: white;
-          background-color: teal;
+          background-color: $darkPurple;
           padding: 10px;
           border: none;
           border-radius: 10px;

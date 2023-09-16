@@ -5,8 +5,6 @@ import axios from "axios";
 // import { useLocation, useNavigate } from "react-router-dom";
 // import moment from "moment";
 import { Context } from "../context/Context.js";
-//import "./write.css";
-
 
 
 export default function Write() {

@@ -4,7 +4,7 @@ import * as ReactDOM from "react-dom/client";
 //import TopBar from "./components/topbar/TopBar";
 //import Single from "./pages/single/Single";
 //import Write from "./pages/write/Write";
-import Settings from "./pages/settings/Settings";
+import Settings from "./pages/Settings";
 //import Login from "./pages/login/Login";
 //import Register from "./pages/register/Register";
 import { createBrowserRouter, RouterProvider, BrowserRouter as Router, Routes, Route, Link, Outlet} from "react-router-dom";

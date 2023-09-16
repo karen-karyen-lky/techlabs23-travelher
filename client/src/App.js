@@ -1,12 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-//import Home from "./pages/home/Home";
-//import TopBar from "./components/topbar/TopBar";
-//import Single from "./pages/single/Single";
-//import Write from "./pages/write/Write";
-import Settings from "./pages/settings/Settings";
-//import Login from "./pages/login/Login";
-//import Register from "./pages/register/Register";
+import Settings from "./pages/Settings";
 import { createBrowserRouter, RouterProvider, BrowserRouter as Router, Routes, Route, Link, Outlet} from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "./context/Context";

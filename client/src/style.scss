@@ -207,7 +207,7 @@ $darkPurple: #8080FF;
     width: 400px; /* Vergrößere die Breite beim Hover */
     height: 200px; /* Vergrößere die Höhe beim Hover */
       transform: perspective(1000px) rotateY(3deg); /* Reduced rotation angle */
-      background-color: #8080FF; /* Change back to #8080FF */
+      background-color:$darkPurple; /* Change back to #8080FF */
 }
 
 .element:hover .initial-text {
@@ -715,8 +715,8 @@ button:hover {
       flex: 3;
       margin: 20px;
       padding-bottom: 30px;
-      background-color: $sand;
-      border-radius: 10px;
+      background-color: #e5e5ff;
+      border-radius: 5px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -837,7 +837,8 @@ button:hover {
       margin-top: 10px;
       margin-left: 10px;
       font-size: 30px;
-      border: 1px solid #000;
+      border: 1px solid #222222;
+      border-radius: 10px;
       padding: 20px;
       width: 70vw;
       
@@ -939,5 +940,90 @@ button:hover {
         }
       }
     }
+//SETTINGS
+
+.settings {
+  display: flex;
+}
+
+.settingsWrapper {
+  flex: 9;
+  padding: 20px;
+}
+
+.settingsTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settingsUpdateTitle {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: $darkPurple;
+}
+
+.settingsDeleteTitle {
+  color: $darkPurple;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.settingsForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.settingsPP {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.settingsPP > img {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.settingsPPIcon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color:$lightPurple;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.settingsForm > label {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.settingsForm > input {
+  color: gray;
+  margin: 10px 0;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+
+.settingsSubmit{
+    width: 150px;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: $darkPurple;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
   }
 }

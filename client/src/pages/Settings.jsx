@@ -1,8 +1,9 @@
-import "./settings.css";
-import Sidebar from "../../components/sidebar/sidebar";
+
+import Sidebar from "../components/sidebar/sidebar";
 import { useContext, useState } from "react";
-import { Context } from "../../context/Context";
+import { Context } from "../context/Context";
 import axios from "axios";
+import "../style.scss";
 
 export default function Settings() {
   const [file, setFile] = useState(null);
@@ -52,8 +53,9 @@ export default function Settings() {
           <label>Profile Picture</label>
           <div className="settingsPP">
             <img
-              src={file ? URL.createObjectURL(file) : PF+user.profilePic}
-              alt=""
+              //src={file ? URL.createObjectURL(file) : PF+user.profilePic}
+              src="https://img.freepik.com/fotos-kostenlos/smiley-frau-im-freien-hautnah_23-2148999115.jpg?w=2000"
+              alt="user-female-circle"
             />
             <label htmlFor="fileInput">
               <i className="settingsPPIcon far fa-user-circle"></i>

@@ -28,7 +28,7 @@ const Register = () => {
   };
 
   return (
-    <div className="auth">
+    <div className="register">
       <h1>Register</h1>
       <form>
         <input

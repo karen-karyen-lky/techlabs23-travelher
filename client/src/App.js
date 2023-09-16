@@ -1,15 +1,9 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-//import Home from "./pages/home/Home";
-//import TopBar from "./components/topbar/TopBar";
-//import Single from "./pages/single/Single";
-//import Write from "./pages/write/Write";
 import Settings from "./pages/settings/Settings";
-//import Login from "./pages/login/Login";
-//import Register from "./pages/register/Register";
 import { createBrowserRouter, RouterProvider, BrowserRouter as Router, Routes, Route, Link, Outlet} from "react-router-dom";
 import { useContext } from "react";
-import { Context } from "./context/Context";
+import Context from "./context/Context";
 
 import Register from "./pages/Register";
 import Login from "./pages/Login";
@@ -21,8 +15,6 @@ import Footer from "./components/Footer";
 import Blog from "./pages/Blog"
 import Highlight from "./pages/Highlight"
 import Duesseldorf from "./pages/duesseldorf";
-import Tokyo from "./pages/tokyo";
-import Solotraveltips from "./pages/SoloTravelTips";
 import TopRatedPlaces from "./pages/TopRatedPlaces";
 import Germany from "./pages/Germany";
 import "./style.scss"
@@ -61,10 +53,6 @@ const router = createBrowserRouter([
         element: <Duesseldorf />,
       },
       {
-        path: "/tokyo",
-        element: <Tokyo />,
-      },
-      {
         path: "/blog",
         element: <Blog />,
       }, 
@@ -76,10 +64,7 @@ const router = createBrowserRouter([
         path: "/TopRatedPlaces",
         element: <TopRatedPlaces />,
       },
-      {
-        path: "/SoloTravelPlace",
-        element: <Solotraveltips />,
-      },
+
       {
         path: "/Germany",
         element: <Germany />,

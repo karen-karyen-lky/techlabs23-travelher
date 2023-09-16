@@ -232,17 +232,77 @@ $darkPurple: #8080FF;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: $darkPurple;
 }
 
-    //LOGIN & REGISTER
-    .auth {
+  //LOGIN & REGISTER
+  .auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: $lightPurple;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("https://images.pexels.com/photos/317355/pexels-photo-317355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    h1 {
+      font-size: 30px;
+      color: white;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      padding: 50px;
+      background-color: white;
+      width: 200px;
+      gap: 20px;
+      input {
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid gray;
+      }
+      button {
+        padding: 10px;
+        border: none;
+        background-color: #8080FF;
+        cursor: pointer;
+        color: white;
+        &:hover {
+          color: #8080FF;
+          background-color: white;
+          border: 1px solid #8080FF;
+        }          
+      }
+      p {
+        font-size: 12px;
+        color: red;
+        text-align: center;
+      }
+      span {
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+  }
+    //Register
+    .register {
+      height: calc(100vh - 50px);
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      background-color: $lightPurple;
+      background: linear-gradient(
+          rgba(255, 255, 255, 0.5),
+          rgba(255, 255, 255, 0.5)
+        ),
+        url("https://images.pexels.com/photos/317355/pexels-photo-317355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+      background-size: cover;
       h1 {
         font-size: 30px;
         color: white;
@@ -267,6 +327,11 @@ button:hover {
           background-color: #8080FF;
           cursor: pointer;
           color: white;
+          &:hover {
+          color: #8080FF;
+          background-color: white;
+          border: 1px solid #8080FF;
+        } 
         }
         p {
           font-size: 12px;
@@ -278,6 +343,53 @@ button:hover {
           text-align: center;
         }
       }
+    }
+
+    .registerTitle {
+      font-size: 50px;
+    }
+
+    .registerForm {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .registerForm > label {
+      margin: 10px 0;
+    }
+
+    .registerInput {
+      padding: 10px;
+      background-color: white;
+      border: none;
+    }
+
+    .registerButton {
+      margin-top: 20px;
+      cursor: pointer;
+      background-color: $darkPurple;
+      &:hover {
+        color: #8080FF;
+        background-color: white;
+        border: 1px solid #8080FF;
+      }
+      border: none;
+      color: white;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .registerLoginButton {
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: lightcoral;
+      cursor: pointer;
+      border: none;
+      padding: 10px;
+      color: white;
+      border-radius: 10px;
     }
     //NAVBAR
     .navbar {
@@ -626,69 +738,6 @@ button:hover {
             border: none;
           }
         }
-        .write {
-          padding-top: 50px;
-        }
-
-        .writeImg {
-          margin-left: 150px;
-          width: 70vw;
-          height: 250px;
-          border-radius: 10px;
-          object-fit: cover;
-        }
-
-        .writeForm {
-          position: relative;
-        }
-
-        .writeFormGroup {
-          margin-left: 150px;
-          display: flex;
-          align-items: center;
-        }
-
-        .writeIcon {
-          width: 25px;
-          height: 25px;
-          border-radius: 50%;
-          border: 1px solid;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 20px;
-          color: rgb(121, 118, 118);
-          cursor: pointer;
-        }
-
-        .writeInput {
-          font-size: 30px;
-          border: none;
-          padding: 20px;
-          width: 70vw;
-        }
-
-        .writeInput:focus {
-          outline: none;
-        }
-
-        .writeText {
-          font-size: 20px;
-          height: 100vh;
-        }
-
-        .writeSubmit {
-          position: absolute;
-          top: 20px;
-          right: 50px;
-          color: white;
-          background-color: teal;
-          padding: 10px;
-          border: none;
-          border-radius: 10px;
-          cursor: pointer;
-          font-size: 16px;
-        }
       }
       .menu {
         flex: 2;
@@ -737,6 +786,70 @@ button:hover {
           }
         }
       }
+    }
+    .writeImg {
+      margin-left: 150px;
+      width: 70vw;
+      height: 250px;
+      border-radius: 10px;
+      object-fit: cover;
+      &:hover{  border: 1px solid white;
+        background-color: $lightPurple;
+        color: rgb(198, 56, 56);}
+    }
+
+    .writeForm {
+      position: relative;
+    }
+
+    .writeFormGroup {
+      margin-left: 150px;
+      display: flex;
+      align-items: center;
+      border:1px solid #4040fe;
+      border-radius: 10px;   
+    }
+
+    .writeIcon {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      border: 1px solid ;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: rgb(121, 118, 118);
+      cursor: pointer;
+    }
+
+    .writeInput {
+      font-size: 30px;
+      border: 1px solid black;
+      padding: 20px;
+      width: 60vw;
+    }
+
+    .writeInput:focus {
+      outline: none;
+    }
+
+    .writeText {
+      font-size: 20px;
+      height: 100vh;
+    }
+
+    .writeSubmit {
+      position: absolute;
+      top: 20px;
+      right: 50px;
+      color: white;
+      background-color: $lightPurple;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
     }
   }
 }

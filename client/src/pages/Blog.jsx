@@ -104,7 +104,7 @@ return (
       {posts.map((post) => (
         <div className="post" key={post._id}>
           <div className="img">
-            <img src={`../upload/${post.img}`} alt="" />
+            <img src={post.photo} alt="" />
           </div>
           <div className="content">
             <Link className="link" to={`/post/${post._id}`}>

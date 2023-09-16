@@ -37,10 +37,7 @@ const Navbar = () => {
           <Link className="link" to="/?cat=food">
             <h6>FOOD</h6>
           </Link> */}
-          <span>          
-            <Link to="/settings">
-            {currentUser?.username}</Link>
-          </span>
+          <span>{currentUser?.username}</span>
           {currentUser ? (
             <span onClick={logout}>Logout</span>
           ) : (
@@ -55,6 +52,11 @@ const Navbar = () => {
             </Link>
             </span>
           ) : ( "" )}
+          {currentUser ? (
+          <Link to="/settings">
+            <img className="topImg" src={PF+currentUser.profilePic} alt="" />
+          </Link>
+        ) : ('')}
         </div>
       </div>
     </div>
